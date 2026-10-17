@@ -61,14 +61,16 @@ const Icon=({n,size=24,className="",fill="none"})=><svg xmlns="http://www.w3.org
 const seedStories=[
  {id:1,title:"India’s festive supply chains prepare for peak demand",summary:"Logistics leaders are focusing on forecasting, inventory positioning, warehouse capacity, seasonal hiring, transportation planning, last-mile delivery and technology-enabled visibility.",category:"Supply Chain",region:"India",date:"Oct 2026",source:"Logistics Insider",url:"https://www.logisticsinsider.in/product/logistics-insider-magazine-october-2026-issue-digital-magazine/",icon:"warehouse"},
  {id:2,title:"Integrated Transport & Logistics Authority approved",summary:"India is moving toward integrated transport and logistics planning with a national authority intended to support long-term planning, research, project appraisal, monitoring, policy and data analytics.",category:"Policy",region:"India",date:"Oct 2026",source:"Logistics Outlook",url:"https://www.logisticsoutlook.com/logistics",icon:"truck"},
- {id:3,title:"Blue Dart and India Post collaborate on last-mile connectivity",summary:"The collaboration aims to use India Post’s network to help businesses reach customers in underserved towns and remote locations.",category:"Last Mile",region:"India",date:"11 Oct 2026",source:"ITLN",url:"https://www.itln.in/logistics",icon:"truck"},
- {id:4,title:"Kuehne+Nagel opens technology centre in Chennai",summary:"The Chennai centre is expected to support development of digital logistics solutions with technology expertise based in the city.",category:"Technology",region:"Chennai",date:"1 Oct 2026",source:"ITLN",url:"https://www.itln.in/logistics",icon:"warehouse"},
+ {id:3,title:"Blue Dart and India Post collaborate on last-mile connectivity",summary:"The collaboration aims to use India Post’s network to help businesses reach customers in underserved towns and remote locations.",category:"Last Mile",region:"India",date:"11 Oct 2026",source:"Industry news",url:"https://www.itln.in/logistics",icon:"truck"},
+ {id:4,title:"Kuehne+Nagel opens technology centre in Chennai",summary:"The Chennai centre is expected to support development of digital logistics solutions with technology expertise based in the city.",category:"Technology",region:"Chennai",date:"1 Oct 2026",source:"Industry news",url:"https://www.itln.in/logistics",icon:"warehouse"},
  {id:5,title:"European truck toll systems continue to change",summary:"Heavy-goods-vehicle tolling across Europe is shifting toward distance-based charges and CO2-related components.",category:"Road",region:"Europe",date:"12 Oct 2026",source:"TrasportoEuropa",url:"https://www.trasportoeuropa.it/english/transport-and-logistics-news-12-october-2026/",icon:"truck"},
  {id:6,title:"Golden Week slowdown weighs on container freight rates",summary:"Drewry’s World Container Index was reported down 2%, with weaker transpacific and Asia-Europe rates during Chinese holidays.",category:"Ocean",region:"Global",date:"12 Oct 2026",source:"TrasportoEuropa",url:"https://www.trasportoeuropa.it/english/transport-and-logistics-news-12-october-2026/",icon:"ship"},
  {id:7,title:"AI and analytics reshape energy logistics",summary:"The October Logistics News ME edition highlights AI, advanced analytics and smarter operating models as forces transforming energy movement and management.",category:"AI & Digital",region:"Middle East",date:"8 Oct 2026",source:"Logistics News ME",url:"https://www.cbnme.com/magazines/logistics-news-me-october-2026/",icon:"sparkles"},
  {id:8,title:"Autonomous and electric trucking moves forward",summary:"A logistics news roundup highlights developments involving driverless freight operations, autonomous-yard partnerships and electric heavy trucks.",category:"Future Mobility",region:"Global",date:"2 Oct 2026",source:"Talking Logistics",url:"https://talkinglogistics.com/2026/10/02/above-the-fold-supply-chain-logistics-news-october-2-2026/",icon:"truck"},
 ];
-const cats=["All","Supply Chain","Road","Ocean","Last Mile","Technology","AI & Digital","Future Mobility","Policy"];
+const extraStories=[["Exponent ONE, Montra Electric launch pay-per-km EV plan","Technology","truck","16 Oct 2026","technology/exponent-one-montra-electric-launch-pay-per-km-ev-plan-1360959"],["Port of Montreal and Adani Group renew trade agreement","Ocean","ship","16 Oct 2026","shipping/port-of-montreal-and-adani-group-renew-trade-agreement-1360957"],["Edgistify opens 68,000 sq ft warehouse at IndoSpace Luhari for brands","Warehousing","warehouse","16 Oct 2026","supply-chain/edgistify-opens-68000-sq-ft-warehouse-at-indospace-luhari-for-brands-1360955"],["Aramex opens new office in Ahmedabad","Supply Chain","truck","15 Oct 2026","logistics/aramex-opens-new-office-in-ahmedabad-1360947"],["Visakhapatnam Port handles 50 million tonnes of cargo in 196 days","Ocean","ship","15 Oct 2026","shipping/visakhapatnam-port-handles-50-million-tonnes-of-cargo-in-196-days-1360943"],["Navkar Corporation secures ₹480 million Southern Railway cargo terminal contract","Rail","rail","Oct 2026","railway/navkar-corporation-secures-480-million-southern-railway-cargo-terminal-contract-1360937"],["Swan Defence reports 2.5-fold rise in H1 FY27 operating revenue","Supply Chain","truck","14 Oct 2026","logistics/swan-defence-reports-25-fold-rise-in-h1-fy27-operating-revenue-1360934"],["Aramex signs up to strengthen capabilities at all GMR airports in India","Air Cargo","plane","14 Oct 2026","aviation/aramex-signs-up-to-strengthen-capabilities-at-all-gmr-airports-in-india-1360920"],["DHL expands temperature-controlled air cargo network in Asia","Air Cargo","plane","13 Oct 2026","aviation/dhl-expands-temperature-controlled-air-cargo-network-in-asia-1360916"],["Lufthansa Cargo shifts Mumbai freighters to Navi Mumbai","Air Cargo","plane","12 Oct 2026","aviation/lufthansa-cargo-shifts-mumbai-freighters-to-navi-mumbai-1360908"],["NMIA responds to brokers, waives demurrage till 15 Oct","Air Cargo","plane","6 Oct 2026","aviation/nmia-responds-to-brokers-waives-demurrage-till-15-oct-1360847"],["Trade bodies back brokers on NMIA delays","Air Cargo","plane","4 Oct 2026","aviation/trade-bodies-back-brokers-on-nmia-delays-1360833"],["Customs brokers flag 72-hour delays at NMIA cargo hub","Air Cargo","plane","3 Oct 2026","aviation/customs-brokers-flag-72-hour-delays-at-nmia-cargo-hub-1360829"],["Challenge Group suspends freighter flights to Navi Mumbai Airport","Air Cargo","plane","2 Oct 2026","aviation/challenge-group-suspends-freighter-flights-to-navi-mumbai-airport-1360820"],["SAS Scandinavia Cargo appoints Allied Aviation as India GSSA","Air Cargo","plane","29 Sep 2026","aviation/sas-cargo-appoints-allied-aviation-as-india-gssa-1360791"],["Can Aktau become a new gateway for China–Europe air cargo?","Air Cargo","plane","Oct 2026","business-of-cargo/can-aktau-become-a-new-gateway-for-chinaeurope-air-cargo-1360952"],["The truth about NMIA’s cargo delays","Air Cargo","plane","Oct 2026","business-of-cargo/the-truth-about-nmias-cargo-delays-1360873"],["India to implement ONOP reforms across all ports by March 2027","Policy","ship","14 Oct 2026","shipping/india-to-implement-onop-reforms-across-all-ports-by-march-2027-1360926"],["New Mangalore Port cargo traffic grows 7.68% in FY2026-27","Ocean","ship","14 Oct 2026","shipping/new-mangalore-port-cargo-traffic-grows-768-in-fy2026-27-1360923"],["Aegis Logistics to acquire Agility’s stake in Tristar","Supply Chain","truck","14 Oct 2026","logistics/agility-to-sell-tristar-to-aegis-logistics-for-15-billion-1360924"],["Trackon elevates Chandra Prakash to CEO","Last Mile","truck","13 Oct 2026","logistics/trackon-elevates-chandra-prakash-to-ceo-1360910"],["India’s 3PL sector leads warehousing demand with 110 mn sq ft","Warehousing","warehouse","20 Aug 2026","warehousing/indias-3pl-sector-leads-warehousing-demand-with-110-mn-sq-ft-1360359"],["CWC launches heavy-duty EV fleet for green logistics push","Warehousing","warehouse","24 Jul 2026","warehousing/cwc-launches-heavy-duty-ev-fleet-for-green-logistics-push-1360014"],["Indian Railways freight loading rises 6.14% in September","Rail","rail","Oct 2026","railway/indian-railways-freight-loading-rises-614-in-september-1360922"],["DFC moves 19.7 billion gross tonne km as interchange hits record","Rail","rail","Oct 2026","railway/dfc-moves-197-billion-gross-tonne-km-as-interchange-hits-record-1360902"],["Varuna Elevated Corridor to boost Varanasi freight connectivity","Road","truck","Oct 2026","road-transportation/varuna-elevated-corridor-to-boost-varanasi-freight-connectivity-1360639"],["TrucksUp raises $8.2 million in growth funding","Road","truck","Oct 2026","road-transportation/trucksup-raises-82-million-in-growth-funding-1360538"],["UltraTech to expand electric truck fleet to over 600 by December","Road","truck","Oct 2026","road-transportation/ultratech-to-expand-electric-truck-fleet-to-over-600-by-december-1360537"],["Modernising India’s agri-export cold chain: Tech, air & sea","Supply Chain","warehouse","27 Sep 2026","supply-chain/modernising-indias-agri-export-cold-chain-tech-air-sea-1360766"],["DHL launches AI tool TradeNavigator for customs data","AI & Digital","sparkles","19 Sep 2026","logistics/dhl-launches-ai-tool-tradenavigator-for-customs-data-1360706"]].map((r,i)=>({id:"x"+i,title:r[0],summary:"Latest "+r[1].toLowerCase()+" update. Open the original report for full details.",category:r[1],region:"India",date:r[3],source:"Industry news",url:"https://www.itln.in/"+r[4],icon:r[2],snap:true}));
+seedStories.push(...extraStories);
+const cats=["All","Supply Chain","Road","Ocean","Air Cargo","Rail","Warehousing","Last Mile","Technology","AI & Digital","Future Mobility","Policy"];
 const blank={title:"",summary:"",category:"Supply Chain",region:"Global",source:"Community",url:""};
 const tiles=[
  {id:"t1",label:"Road freight",icon:"truck",g:"from-[#0d4a42] to-[#4f8f7f]"},
@@ -78,41 +80,32 @@ const tiles=[
  {id:"t5",label:"Warehousing",icon:"warehouse",g:"from-[#365314] to-[#a3e635]"},
  {id:"t6",label:"Supply chain AI",icon:"sparkles",g:"from-[#831843] to-[#f472b6]"},
 ];
+const MONTHS={jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
+const tsOf=s=>{if(s.ts)return s.ts;const m=/(?:(\d{1,2})\s+)?([A-Za-z]{3})[a-z]*\.?,?\s+(\d{4})/.exec(s.date||"");return m?new Date(+m[3],MONTHS[m[2].toLowerCase()]??0,+(m[1]||1)).getTime():0};
+const byDate=(a,b)=>tsOf(b)-tsOf(a);
 const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 
-/* Draggable card, constrained to its board */
-function Draggable({item,pos,onMove,onFront,z,boardRef}){
-  const start=useRef(null);
-  const down=e=>{e.currentTarget.setPointerCapture(e.pointerId);start.current={x:e.clientX-pos.x,y:e.clientY-pos.y};onFront(item.id)};
-  const move=e=>{if(!start.current)return;const b=boardRef.current.getBoundingClientRect();
-    const x=Math.min(Math.max(0,e.clientX-start.current.x),b.width-150),y=Math.min(Math.max(0,e.clientY-start.current.y),b.height-120);onMove(item.id,{x,y})};
-  const up=()=>{start.current=null};
-  return <div onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up}
-    className={`drag absolute w-[150px] h-[120px] rounded-2xl shadow-xl overflow-hidden ring-2 ring-white ${item.src?'':'bg-gradient-to-br '+item.g}`}
-    style={{left:pos.x,top:pos.y,zIndex:z}}>
-    {item.src?<img src={item.src} alt={item.label} draggable="false" className="w-full h-full object-cover"/>:<div className="h-full flex items-center justify-center text-[#c9f55d]"><Icon n={item.icon} size={52}/></div>}
-    <span className="absolute bottom-1.5 left-2 text-[11px] font-bold text-white bg-black/40 rounded-full px-2 py-0.5">{item.label}</span>
-  </div>;
+/* Static image board with real photos (put your photos in an "images" folder next to index.html) */
+const boardTiles=[
+ {id:"b1",label:"Road freight",icon:"truck",img:"images/truck.jpg",g:"from-[#0d4a42] to-[#4f8f7f]"},
+ {id:"b2",label:"Rail freight",icon:"rail",img:"images/rail.jpg",g:"from-[#4c1d95] to-[#a78bfa]"},
+ {id:"b3",label:"Ocean cargo ship",icon:"ship",img:"images/ship.jpg",g:"from-[#1e3a8a] to-[#38bdf8]"},
+ {id:"b4",label:"Inland barge",icon:"ship",img:"images/barge.jpg",g:"from-[#134e4a] to-[#2dd4bf]"},
+ {id:"b5",label:"Air cargo flight",icon:"plane",img:"images/flight.jpg",g:"from-[#7c2d12] to-[#fb923c]"},
+ {id:"b6",label:"Warehousing",icon:"warehouse",img:"images/warehouse.jpg",g:"from-[#365314] to-[#a3e635]"},
+];
+function BoardTile({t}){
+  const [failed,setFailed]=useState(false);
+  return <figure className={`relative m-0 h-40 md:h-52 rounded-2xl shadow-lg overflow-hidden ring-2 ring-white bg-gradient-to-br ${t.g} flex items-center justify-center text-[#c9f55d]`}>
+    {failed?<Icon n={t.icon} size={64}/>:<img src={t.img} alt={t.label} loading="lazy" draggable="false" onError={()=>setFailed(true)} className="absolute inset-0 w-full h-full object-cover"/>}
+    <figcaption className="absolute bottom-2 left-3 text-xs font-bold text-white bg-black/50 rounded-full px-3 py-1">{t.label}</figcaption>
+  </figure>;
 }
-
 function ImageBoard(){
-  const boardRef=useRef(null),fileRef=useRef(null);
-  const [items,setItems]=useState(tiles);
-  const [pos,setPos]=useState(()=>store.get("mw_pos",null)||Object.fromEntries(tiles.map((t,i)=>[t.id,{x:20+(i%3)*170,y:20+Math.floor(i/3)*140}])));
-  const [zs,setZs]=useState({});const top=useRef(10);
-  const move=(id,p)=>setPos(o=>{const n={...o,[id]:p};store.set("mw_pos",n);return n});
-  const front=id=>setZs(o=>({...o,[id]:++top.current}));
-  const add=e=>{[...e.target.files].forEach((f,i)=>{const id="u"+Date.now()+i;
-    setItems(o=>[...o,{id,label:f.name.slice(0,16),src:URL.createObjectURL(f)}]);
-    setPos(o=>({...o,[id]:{x:30+i*20,y:30+i*20}}))});e.target.value=""};
-  const reset=()=>{const n=Object.fromEntries(tiles.map((t,i)=>[t.id,{x:20+(i%3)*170,y:20+Math.floor(i/3)*140}]));setPos(n);store.set("mw_pos",n);setItems(tiles)};
   return <section id="board" className="mb-10">
-    <div className="flex flex-wrap items-end justify-between gap-3 mb-4"><div><h2 className="text-2xl font-black">Logistics image board</h2><p className="text-sm text-slate-500">Drag the images anywhere, or add your own photos to build a board.</p></div>
-      <div className="flex gap-2"><button onClick={()=>fileRef.current.click()} className="flex items-center gap-2 bg-[#0d4a42] text-white px-4 py-2 rounded-full text-sm font-bold"><Icon n="upload" size={16}/>Add images</button>
-      <button onClick={reset} className="px-4 py-2 rounded-full text-sm font-bold bg-white border border-slate-200">Reset</button>
-      <input ref={fileRef} type="file" accept="image/*" multiple hidden onChange={add}/></div></div>
-    <div ref={boardRef} className="relative h-[460px] rounded-[28px] bg-[#dfefe9] border border-slate-200 overflow-hidden" style={{backgroundImage:"radial-gradient(#0d4a4233 1px,transparent 1px)",backgroundSize:"22px 22px"}}>
-      {items.map(it=><Draggable key={it.id} item={it} pos={pos[it.id]||{x:20,y:20}} onMove={move} onFront={front} z={zs[it.id]||1} boardRef={boardRef}/>)}
+    <div className="mb-4"><h2 className="text-2xl font-black">Logistics image board</h2><p className="text-sm text-slate-500">Trucks, trains, ships, barges, flights and warehouses that keep the world moving.</p></div>
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 rounded-[28px] bg-[#dfefe9] border border-slate-200 p-5">
+      {boardTiles.map(t=><BoardTile key={t.id} t={t}/>)}
     </div></section>;
 }
 
@@ -154,15 +147,18 @@ function App(){
       const live=d.items.map((it,i)=>{const[category,icon]=classify(it.title);const p=it.title.split(" - ");
         return{id:it.guid||it.link||i,title:p[0],summary:clean(it.description)||"Open the source to read the full story.",category,region:"Global / India",
           date:new Date(it.pubDate).toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"}),source:p.length>1?p[p.length-1]:"Google News",url:it.link,icon}});
-      setStories(prev=>[...prev.filter(s=>s.posted),...live]);setLastUpdated(new Date());
+      let more=[];
+      try{const r2=await fetch("https://api.rss2json.com/v1/api.json?rss_url="+encodeURIComponent("https://news.google.com/rss/search?q="+encodeURIComponent("site:itln.in when:14d")+"&hl=en-IN&gl=IN&ceid=IN:en"));const d2=await r2.json();
+        if(d2.status==="ok")more=d2.items.map((it,i)=>{const[category,icon]=classify(it.title);return{id:it.guid||it.link||"m"+i,title:it.title.split(" - ")[0],summary:"Latest update. Open the original report for full details.",category,region:"India",date:new Date(it.pubDate).toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"}),source:"Industry news",url:it.link,icon}})}catch(e){}
+      setStories(prev=>{const seen=new Set();return[...prev.filter(s=>s.posted),...more,...live,...prev.filter(s=>s.snap)].filter(s=>{const k=s.title.toLowerCase();if(seen.has(k))return false;seen.add(k);return true})});setLastUpdated(new Date());
     }catch(e){setFeedError((e.message||"Live feed could not be loaded")+". Showing previous stories.")}finally{setLoading(false)}};
   useEffect(()=>{refreshFeed();const t=setInterval(refreshFeed,15*60*1000);return()=>clearInterval(t)},[]);
 
   const toggleSave=s=>{const n=saved.some(x=>x.id===s.id)?saved.filter(x=>x.id!==s.id):[...saved,s];setSaved(n);store.set("mw_saved",n)};
   const isSaved=s=>saved.some(x=>x.id===s.id);
   const base=view==="saved"?saved:stories;
-  const filtered=useMemo(()=>base.filter(s=>(cat==="All"||s.category===cat)&&(`${s.title} ${s.summary} ${s.region} ${s.source}`.toLowerCase().includes(q.toLowerCase()))),[base,q,cat]);
-  const post=()=>{if(!draft.title||!draft.summary)return;setStories([{...draft,id:Date.now(),date:"New",icon:"truck",posted:true},...stories]);setOpen(false);setDraft(blank)};
+  const filtered=useMemo(()=>[...base].sort(byDate).filter(s=>(cat==="All"||s.category===cat)&&(`${s.title} ${s.summary} ${s.region} ${s.source}`.toLowerCase().includes(q.toLowerCase()))),[base,q,cat]);
+  const post=()=>{if(!draft.title||!draft.summary)return;setStories([{...draft,id:Date.now(),date:"New",ts:Date.now(),icon:"truck",posted:true},...stories]);setOpen(false);setDraft(blank)};
   const share=async s=>{const data={title:s.title,text:s.title,url:s.url||location.href};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(data.url);alert("Link copied")}}catch(e){}};
   const subscribe=()=>{if(!/^\S+@\S+\.\S+$/.test(sub))return;store.set("mw_sub",true);setSubDone(true);
     location.href=`mailto:${OWNER.email}?subject=${encodeURIComponent("MOVEWIRE newsletter signup")}&body=${encodeURIComponent("Please add me: "+sub)}`};
@@ -190,7 +186,7 @@ function App(){
           <div className="mt-6 flex flex-wrap gap-3"><a href="#stories" className="bg-[#c9f55d] text-[#062f2b] font-black px-5 py-3 rounded-full text-sm">Read latest</a><a href="#about" className="border border-white/40 font-bold px-5 py-3 rounded-full text-sm">Meet the owner</a></div>
         </div></section>
 
-      <Carousel stories={stories} onOpen={setSel}/>
+      <Carousel stories={[...stories].sort(byDate)} onOpen={setSel}/>
 
       <section id="stories">
         <div className="flex flex-col md:flex-row gap-3 justify-between mb-4">
@@ -198,7 +194,7 @@ function App(){
             <input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search transport, ports, AI, Chennai…" className="w-full pl-11 pr-4 py-3 rounded-2xl border border-slate-200 bg-white outline-none focus:ring-2 focus:ring-emerald-700"/></div>
           <div className="flex items-center gap-3 text-sm text-slate-500">
             <div className="flex bg-white border border-slate-200 rounded-full p-1">{[["all","All stories"],["saved","Saved ("+saved.length+")"]].map(([k,l])=><button key={k} onClick={()=>setView(k)} className={`px-3 py-1 rounded-full font-bold ${view===k?'bg-[#0d4a42] text-white':'text-slate-600'}`}>{l}</button>)}</div>
-            <span>{filtered.length} shown</span>
+            <span>{filtered.length} shown • newest first</span>
             <button onClick={refreshFeed} disabled={loading} className="underline disabled:opacity-50">{loading?"Refreshing…":"Refresh"}</button></div>
         </div>
         <div className="text-xs text-slate-500 mb-3">{lastUpdated?"Live • updated "+lastUpdated.toLocaleTimeString("en-IN",{hour:"2-digit",minute:"2-digit"}):"Demo stories shown until the live feed loads"}{feedError&&<span className="text-red-700"> • {feedError}</span>}</div>
